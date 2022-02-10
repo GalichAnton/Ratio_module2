@@ -1,7 +1,7 @@
 import "./styles/style.css";
-
-const app = document.querySelector<HTMLDivElement>("#app")!;
-app.innerHTML = `
-  <h1 class="red">Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+import { createMatrix } from "./js/scripts/createMatrix";
+import { constants, game } from "./js/data/constants";
+import { randomNum } from "./js/scripts/randomNum";
+import { createTable } from "./js/scripts/createCell";
+createTable(game, constants.size);
+const matrix = createMatrix(constants.size);

@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/style.css">
-    <title>Game 2048</title>
-  </head>
-  <body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="2048 is played on a plain 5×5 grid, with numbered tiles that slide when a player moves them using the four arrow keys. Every turn, a new tile randomly appears in an empty spot on the board with a value of either 2 or 4. ... The game is won when a tile with a value of 2048 appears on the board.">
+  <meta name="keywords" content="game, 2048, score, play, win">
+  <meta property="og:image"
+        content="https://i0.wp.com/itsfoss.com/wp-content/uploads/2018/07/play-2048-game-linux.jpeg?fit=800%2C450&ssl=1"/>
+  <meta property="og:title" content="Play hame 2048"/>
+  <meta property="og:description" content="Game 2048"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>2 0 4 8</title>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 class="header__title">Game 2048</h1>
+    <h2 class="header__score">Score <span id="score-count">0</span></h2>
+  </header>
+  <section class="game">
+    <div class="game__wrapper">
+      <div class="game__table">
+
+      </div>
+    </div>
+    <div class="game__end">
+      <span class="game__end-title">Game over</span>
+      <button class="game__again">
+        Try again
+      </button>
+    </div>
+  </section>
+  <footer class="footer">
+    <a href="#" class="footer__link">Anton Galich</a>
+    <a href="#" class="footer__link">Ratio</a>
+  </footer>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>

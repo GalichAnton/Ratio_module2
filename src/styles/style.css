@@ -1,4 +1,24 @@
 @import url('./vendor/normalize.css');
-.red {
-  color: red
+/*body*/
+@import url('./blocks/container/container.css');
+/*header*/
+@import url('./blocks/header/header.css');
+/*game*/
+@import url('./blocks/game/game.css');
+/*footer*/
+@import url('./blocks/footer/footer.css');
+:root {
+  --bg-main: #9fded0;
+  --bg-game: #e1ceb4;
+  --cell-wrapper: #9de2ee;
+  --cell: #c3f3c7;
+  --matte-black: #1c1c1c;
+}
+body{
+  background: var(--bg-main);
+  font-family: 'Ubuntu', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
