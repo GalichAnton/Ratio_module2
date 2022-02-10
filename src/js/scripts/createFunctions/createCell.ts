@@ -1,4 +1,4 @@
-import { setColor } from "./setColor";
+import { setColor } from "../setFunctions/setColor";
 
 export const createTable = (parent: HTMLElement, size: number) => {
   for (let i = 0; i < size * size; i++) {
@@ -11,8 +11,7 @@ export const createTable = (parent: HTMLElement, size: number) => {
 export const createCell = (num: number) => {
   const cell = document.createElement("div");
   cell.classList.add(`game__cell`);
-  cell.style.color = setColor(num);
+  cell.style.backgroundColor = setColor(num);
   cell.textContent = String(num);
-
   return cell;
 };

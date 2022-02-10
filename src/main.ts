@@ -1,7 +1,11 @@
 import "./styles/style.css";
-import { createMatrix } from "./js/scripts/createMatrix";
-import { constants, game } from "./js/data/constants";
-import { randomNum } from "./js/scripts/randomNum";
-import { createTable } from "./js/scripts/createCell";
+import { constants, game, gameEnd, gameStart } from "./js/data/constants";
+import { restartGame, startGame } from "./js/scripts/startGame";
+import { createTable } from "./js/scripts/createFunctions/createCell";
 createTable(game, constants.size);
-const matrix = createMatrix(constants.size);
+gameStart.addEventListener("click", () => {
+  startGame();
+});
+gameEnd.addEventListener("click", () => {
+  restartGame();
+});

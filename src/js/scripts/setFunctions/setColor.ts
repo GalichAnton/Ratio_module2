@@ -1,6 +1,6 @@
-import { constants } from "../data/constants";
+import { constants } from "../../data/constants";
 
-export const setColor = (num: number): string => {
+export const setColor = (num: number): string | undefined => {
   switch (num) {
     case 2:
       return constants.colors[0];
@@ -22,5 +22,7 @@ export const setColor = (num: number): string => {
       return constants.colors[8];
     case 2048:
       return constants.colors[9];
+    default:
+      return;
   }
 };
