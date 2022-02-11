@@ -1,40 +1,42 @@
-import { canIpress } from "../../data/constants";
+import { canIpress, constants } from "../../data/constants";
 import { setPosition } from "../setFunctions/setPosition";
 import { createRandomCell } from "../createFunctions/createRandomCell";
 import { matrix } from "../startGame";
-const pressRight = () => {
-  canIpress.canPressRight = false;
-  for (let i = 4; i >= 0; i--) {
-    for (let j = 3; j >= 0; j--) {
+const pressLeft = () => {
+  canIpress.canPressLeft = false;
+  for (let i = 0; i < constants.size; i++) {
+    for (let j = 1; j < constants.size; j++) {
       if (matrix[i][j]) {
         let k = j;
-        while (k != 4) {
-          if (matrix[i][k + 1] === matrix[i][k]) {
-            matrix[i][k + 1] = matrix[i][k + 1] + matrix[i][k];
+        while (k != 0) {
+          if (matrix[i][k - 1] === matrix[i][k]) {
+            matrix[i][k - 1] = matrix[i][k - 1] + matrix[i][k];
             matrix[i][k] = 0;
             const cell = document.querySelector(
               `#x${i}y${k}`
             ) as HTMLDivElement;
-            setPosition(cell, k + 1, i);
-          } else if (matrix[i][k + 1] === 0) {
-            matrix[i][k + 1] = matrix[i][k];
-            matrix[i][k] = 0;
+            setPosition(cell, k - 1, i);
+            canIpress.canPressLeft = true;
+          } else if (matrix[i][k - 1] === 0) {
             const cell = document.querySelector(
               `#x${i}y${k}`
             ) as HTMLDivElement;
-            setPosition(cell, k + 1, i);
+            matrix[i][k - 1] = matrix[i][k];
+            matrix[i][k] = 0;
+            setPosition(cell, k - 1, i);
+            canIpress.canPressLeft = true;
           }
-          k++;
+          k--;
         }
       }
     }
   }
 };
 
-export const toRight = () => {
+export const toLeft = () => {
   new Promise<void>((res) => {
     if (canIpress.canPressDown) {
-      pressRight();
+      pressLeft();
       res();
     }
   }).then(() => {

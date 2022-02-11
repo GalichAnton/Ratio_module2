@@ -1,4 +1,5 @@
-import { canIpress, gameEnd } from "../../data/constants";
+import { canIpress } from "../../data/constants";
+import { endGame } from "../endGame";
 
 export const checkGameOver = () => {
   if (
@@ -7,6 +8,6 @@ export const checkGameOver = () => {
     !canIpress.canPressDown &&
     !canIpress.canPressUp
   ) {
-    gameEnd.classList.add("game__end-active");
+    endGame();
   }
 };

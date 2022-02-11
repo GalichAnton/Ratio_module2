@@ -1,10 +1,7 @@
-import { ICanPress, IConstants } from "./types/types";
+import { ICanPress, IConstants, ITime } from "./types/types";
 export const game = document.querySelector<HTMLDivElement>(
   ".game__table"
 ) as HTMLDivElement;
-export const gameScore = document.querySelector<HTMLSpanElement>(
-  "#score-count"
-) as HTMLSpanElement;
 export const gameEnd = document.querySelector<HTMLDivElement>(
   ".game__end"
 ) as HTMLDivElement;
@@ -32,4 +29,10 @@ export const canIpress: ICanPress = {
   canPressUp: true,
   canPressLeft: true,
   canPressRight: true,
+};
+
+export const time: ITime = {
+  milliSeconds: 0,
+  seconds: 0,
+  minutes: 0,
 };

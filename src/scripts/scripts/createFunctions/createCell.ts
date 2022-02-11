@@ -11,7 +11,7 @@ export const createTable = (parent: HTMLElement, size: number) => {
 export const createCell = (num: number) => {
   const cell = document.createElement("div");
   cell.classList.add(`game__cell`);
-  cell.style.backgroundColor = setColor(num);
+  cell.style.backgroundColor = setColor(num)!;
   cell.textContent = String(num);
   return cell;
 };

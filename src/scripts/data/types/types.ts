@@ -9,3 +9,9 @@ export interface ICanPress {
   canPressUp: boolean;
   canPressDown: boolean;
 }
+
+export interface ITime {
+  milliSeconds: number;
+  seconds: number;
+  minutes: number;
+}

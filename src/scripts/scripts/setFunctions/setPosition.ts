@@ -1,4 +1,3 @@
-import { canIpress } from "../../data/constants";
 import { setColor } from "./setColor";
 
 export const setPosition = (elem: HTMLElement, x: number, y: number) => {
@@ -11,8 +10,4 @@ export const setPosition = (elem: HTMLElement, x: number, y: number) => {
   elem.style.left = x * 20 + "%";
   elem.style.top = y * 20 + "%";
   elem.id = `x${y}y${x}`;
-  canIpress.canPressUp = true;
-  canIpress.canPressDown = true;
-  canIpress.canPressLeft = true;
-  canIpress.canPressRight = true;
 };
