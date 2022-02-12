@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="2048 is played on a plain 5×5 grid, with numbered tiles that slide when a player moves them using the four arrow keys. Every turn, a new tile randomly appears in an empty spot on the board with a value of either 2 or 4. ... The game is won when a tile with a value of 2048 appears on the board.">
+  <meta name="keywords" content="game, 2048, score, play, win">
+  <meta property="og:image"
+        content="https://i0.wp.com/itsfoss.com/wp-content/uploads/2018/07/play-2048-game-linux.jpeg?fit=800%2C450&ssl=1"/>
+  <meta property="og:title" content="Play hame 2048"/>
+  <meta property="og:description" content="Game 2048"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="data:undefined;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA/xe07P8XtvT/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7b0/xe07P8XtvT/F7e8/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3vP8XtvT/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e1Axe3tPsXt7UDF7e0+xe3tPcXt7T3E7e0+xe3tPsXt7UHG7e0+xe3tP8Xt7T/F7e0/xe3tPcTt7XTV8vKm5Pf2gNnz83HU8vGh4/b2c9Xy8lbM7+931vLyd9by8oHZ8/OZ4PX1a9Lx8T7F7e0/xe3tP8Xt7T7F7e1bzvDwsOf493XV8vKj4/b2gtnz86vm9/es5vf3u+v5+KTk9/am5Pf2qeX394rc9PQ9xO3tP8Xt7T/F7e0+xe3tS8nu7oTa8/Ok5Pb2o+P29oPa8/Ok5Pb2a9Px8b/s+fmI2/T0oOL29r7s+fl92PPzPMTt7T/F7e0/xe3tPcXt7V/P8PCe4vb2dtby8mrS8fGg4/b2cNTy8T3F7e192PPzbNPx8XrX8/Ka4fb1Y9Dw8D3E7e0/xe3tP8Xt7T/F7e0+xe3tQMXt7T7F7e0+xe3tQMXt7T7F7e0/xe3tPcXt7T7F7e0+xe3tQMXt7T7F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7b0/xe3vP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7z/F7b0/xe07P8XtvT/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7b0/xe07AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" type="image/x-icon">
+  <title>2 0 4 8</title>
+  <script type="module" crossorigin src="/assets/index.fa274528.js"></script>
+  <link rel="stylesheet" href="/assets/index.732d0af2.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 class="header__title">Game 2048</h1>
+    <h2 class="header__score">Time:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>:
+      <span id="milliseconds">00</span>
+    </h2>
+  </header>
+  <section class="game">
+
+    <button class="btn__start">Start Game</button>
+    <div class="game__block">
+      <div class="game__wrapper">
+        <div class="game__table">
+
+        </div>
+      </div>
+
+      <div class="result">
+        <ul class="result__table">
+          <h2 class="result__title">Results</h2>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="game__end">
+    <span class="game__end-title">Game over</span>
+    <button class="game__again">
+      Try again
+    </button>
+  </div>
+  <div class="game__win">
+    <span class="game__win-title">You won. Congratulations!</span>
+    <div class="game__win-form">
+      <label class="game__win-label" for="name">Enter your name</label>
+      <input class="game__win-input" type="text" placeholder="Your name" id="name"/>
+      <button type='button' class="game__win-button">Enter result</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <a href="https://github.com/GalichAnton/Ratio_module2" class="footer__link">Anton Galich</a>
+    <a href="https://www.ratio.digital/" class="footer__link">Ratio</a>
+  </footer>
+</div>
+
+</body>
+</html>
