@@ -1,4 +1,9 @@
 import { constants, time } from "../../data/constants";
+import {
+  millisecondsElem,
+  minutesElem,
+  secondsElem,
+} from "../../data/elements";
 
 export const clearGame = () => {
   for (let i = 0; i < constants.size; i++) {
@@ -8,6 +13,9 @@ export const clearGame = () => {
     }
   }
   time.seconds = 0;
+  secondsElem.textContent = "0" + time.seconds;
   time.minutes = 0;
+  minutesElem.textContent = "0" + time.minutes;
   time.milliSeconds = 0;
+  millisecondsElem.textContent = "0" + time.milliSeconds;
 };

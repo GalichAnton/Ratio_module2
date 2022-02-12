@@ -22,3 +22,12 @@ export const resultInput = document.querySelector<HTMLInputElement>(
 export const resultTable = document.querySelector<HTMLUListElement>(
   ".result__table"
 ) as HTMLUListElement;
+export const minutesElem = document.querySelector(
+  "#minutes"
+) as HTMLSpanElement;
+export const secondsElem = document.querySelector(
+  "#seconds"
+) as HTMLSpanElement;
+export const millisecondsElem = document.querySelector(
+  "#milliseconds"
+) as HTMLSpanElement;

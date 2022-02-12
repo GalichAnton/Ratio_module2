@@ -1,10 +1,9 @@
 import { time } from "../../data/constants";
-
-const minutesElem = document.querySelector("#minutes") as HTMLSpanElement;
-const secondsElem = document.querySelector("#seconds") as HTMLSpanElement;
-const millisecondsElem = document.querySelector(
-  "#milliseconds"
-) as HTMLSpanElement;
+import {
+  millisecondsElem,
+  minutesElem,
+  secondsElem,
+} from "../../data/elements";
 
 export const timer = () => {
   // milliseconds
