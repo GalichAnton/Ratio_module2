@@ -11,6 +11,7 @@ export interface ICanPress {
 }
 
 export interface ITime {
+  interval: number;
   milliSeconds: number;
   seconds: number;
   minutes: number;

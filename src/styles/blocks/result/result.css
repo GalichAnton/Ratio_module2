@@ -1,0 +1,29 @@
+.result{
+
+}
+
+.result__table{
+  list-style-type: none;
+  min-width: 300px;
+  min-height: 510px;
+  border-radius: 12px;
+  margin: 0;
+  padding: 10px;
+  background-color: var(--bg-game)
+}
+
+.result__title{
+  color: #9C69E2;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.result__item{
+  display: flex;
+  border-bottom: 1px solid #ffffff;
+  justify-content: space-between;
+  color: #FFFFFF;
+  font-size: 20px;
+}

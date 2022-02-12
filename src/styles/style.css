@@ -8,6 +8,8 @@
 @import url('./blocks/game/game.css');
 /*footer*/
 @import url('./blocks/footer/footer.css');
+/*result*/
+@import url('./blocks/result/result.css');
 :root {
   --bg-main: #9fded0;
   --bg-game: #e1ceb4;

@@ -1,6 +1,6 @@
 import { constants } from "../../data/constants";
 import { setPosition } from "./setPosition";
-import { matrix } from "../startGame";
+import { matrix } from "../gameFunctions/startGame";
 
 export const setCellPlace = (elem: HTMLDivElement) => {
   let x;

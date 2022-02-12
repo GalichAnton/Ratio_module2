@@ -1,7 +1,7 @@
 import { canIpress, constants } from "../../data/constants";
 import { setPosition } from "../setFunctions/setPosition";
 import { createRandomCell } from "../createFunctions/createRandomCell";
-import { matrix } from "../startGame";
+import { matrix } from "../gameFunctions/startGame";
 const pressLeft = () => {
   canIpress.canPressLeft = false;
   for (let i = 0; i < constants.size; i++) {
@@ -42,11 +42,5 @@ export const toLeft = () => {
   }).then(() => {
     createRandomCell();
     createRandomCell();
-    console.log(
-      canIpress.canPressDown,
-      canIpress.canPressUp,
-      canIpress.canPressRight,
-      canIpress.canPressLeft
-    );
   });
 };

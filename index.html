@@ -20,22 +20,44 @@
 <div class="container">
   <header class="header">
     <h1 class="header__title">Game 2048</h1>
-    <h2 class="header__score">Time: <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span></h2>
+    <h2 class="header__score">Time:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>:
+      <span id="milliseconds">00</span>
+    </h2>
   </header>
   <section class="game">
-    <button class="btn__start">Start Game</button>
-    <div class="game__wrapper">
-      <div class="game__table">
 
+    <button class="btn__start">Start Game</button>
+    <div class="game__block">
+      <div class="game__wrapper">
+        <div class="game__table">
+
+        </div>
+      </div>
+
+      <div class="result">
+        <ul class="result__table">
+          <h2 class="result__title">Results</h2>
+
+        </ul>
       </div>
     </div>
-    <div class="game__end">
-      <span class="game__end-title">Game over</span>
-      <button class="game__again">
-        Try again
-      </button>
-    </div>
   </section>
+  <div class="game__end">
+    <span class="game__end-title">Game over</span>
+    <button class="game__again">
+      Try again
+    </button>
+  </div>
+  <div class="game__win">
+    <span class="game__win-title">You won. Congratulations!</span>
+    <div class="game__win-form">
+      <label class="game__win-label" for="name">Enter your name</label>
+      <input class="game__win-input" type="text" placeholder="Your name" id="name"/>
+      <button type='button' class="game__win-button">Enter result</button>
+    </div>
+  </div>
   <footer class="footer">
     <a href="https://github.com/GalichAnton/Ratio_module2" class="footer__link">Anton Galich</a>
     <a href="https://www.ratio.digital/" class="footer__link">Ratio</a>

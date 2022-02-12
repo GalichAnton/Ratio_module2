@@ -1,7 +1,7 @@
 import { canIpress } from "../../data/constants";
 import { setPosition } from "../setFunctions/setPosition";
 import { createRandomCell } from "../createFunctions/createRandomCell";
-import { matrix } from "../startGame";
+import { matrix } from "../gameFunctions/startGame";
 const pressRight = () => {
   canIpress.canPressRight = false;
   for (let i = 4; i >= 0; i--) {
@@ -42,11 +42,5 @@ export const toRight = () => {
   }).then(() => {
     createRandomCell();
     createRandomCell();
-    console.log(
-      canIpress.canPressDown,
-      canIpress.canPressUp,
-      canIpress.canPressRight,
-      canIpress.canPressLeft
-    );
   });
 };

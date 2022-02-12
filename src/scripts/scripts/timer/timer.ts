@@ -39,5 +39,3 @@ export const timer = () => {
     minutesElem.textContent = String(time.minutes);
   }
 };
-
-export const setTimer = () => setInterval(timer, 10);

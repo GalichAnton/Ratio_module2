@@ -1,13 +1,5 @@
 import { ICanPress, IConstants, ITime } from "./types/types";
-export const game = document.querySelector<HTMLDivElement>(
-  ".game__table"
-) as HTMLDivElement;
-export const gameEnd = document.querySelector<HTMLDivElement>(
-  ".game__end"
-) as HTMLDivElement;
-export const gameStart = document.querySelector<HTMLButtonElement>(
-  ".btn__start"
-) as HTMLButtonElement;
+
 export const constants: IConstants = {
   size: 5,
   colors: [
@@ -32,7 +24,9 @@ export const canIpress: ICanPress = {
 };
 
 export const time: ITime = {
+  interval: 0,
   milliSeconds: 0,
   seconds: 0,
   minutes: 0,
 };
+export const interval: number = 0;

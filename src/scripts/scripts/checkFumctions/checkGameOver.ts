@@ -1,5 +1,5 @@
 import { canIpress } from "../../data/constants";
-import { endGame } from "../endGame";
+import { endGame } from "../gameFunctions/endGame";
 
 export const checkGameOver = () => {
   if (
