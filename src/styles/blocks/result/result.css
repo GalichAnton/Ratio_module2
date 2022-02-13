@@ -27,3 +27,43 @@
   color: #FFFFFF;
   font-size: 20px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .result__table{
+    min-height: 350px;
+    min-width: 250px;
+  }
+  .result__title{
+    font-size: 20px;
+  }
+  .result__item{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .result__table{
+    margin-top: 20px;
+    min-height: 200px;
+    min-width: 310px;
+  }
+  .result__title{
+    font-size: 20px;
+  }
+  .result__item{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 425px)  {
+  .result__table{
+    margin-top: 20px;
+    min-height: 200px;
+    min-width: 235px;
+  }
+  .result__title{
+    font-size: 20px;
+  }
+  .result__item{
+    font-size: 16px;
+  }
+}
+

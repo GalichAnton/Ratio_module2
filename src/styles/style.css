@@ -6,6 +6,8 @@
 @import url('./blocks/btn/btn__start.css');
 /*game*/
 @import url('./blocks/game/game.css');
+@import url('./blocks/game/__end/game__end.css');
+@import url('./blocks/game/__win/game__win.css');
 /*footer*/
 @import url('./blocks/footer/footer.css');
 /*result*/

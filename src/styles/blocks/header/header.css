@@ -5,3 +5,18 @@
   justify-content: space-between;
   color: #ffffff;
 }
+.header__title{
+  font-size: 24px;
+}
+.header__time{
+  font-size: 24px;
+}
+
+@media screen and (min-width: 10px) and (max-width: 767px) {
+  .header__title{
+    font-size: 18px;
+  }
+  .header__time{
+    font-size: 18px;
+  }
+}

@@ -21,3 +21,19 @@
   background: #9C69E2;
   box-shadow: 0 0 10px #9C69E2, 0 0 40px #9C69E2, 0 0 40px #9C69E2;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .btn__start{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 10px) and (max-width: 767px) {
+  .btn__start{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
