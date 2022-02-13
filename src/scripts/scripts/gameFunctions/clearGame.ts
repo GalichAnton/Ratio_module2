@@ -1,5 +1,8 @@
 import { constants, time } from "../../data/constants";
 import {
+  gameEnd,
+  gameStopBtn,
+  gameStartBtn,
   millisecondsElem,
   minutesElem,
   secondsElem,
@@ -18,4 +21,7 @@ export const clearGame = () => {
   minutesElem.textContent = "0" + time.minutes;
   time.milliSeconds = 0;
   millisecondsElem.textContent = "0" + time.milliSeconds;
+  gameEnd.classList.remove("game__end-active");
+  gameStartBtn.removeAttribute("disabled");
+  gameStopBtn.setAttribute("disabled", "true");
 };

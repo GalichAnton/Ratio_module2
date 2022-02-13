@@ -1,9 +1,4 @@
-import {
-  gameStart,
-  gameWin,
-  resultInput,
-  resultTable,
-} from "../../data/elements";
+import { gameWin, resultInput, resultTable } from "../../data/elements";
 import { time } from "../../data/constants";
 import { clearGame } from "./clearGame";
 
@@ -21,5 +16,4 @@ export const addGameResult = () => {
 
   gameWin.classList.remove("game__win-active");
   clearGame();
-  gameStart.style.display = "";
 };

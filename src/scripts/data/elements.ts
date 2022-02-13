@@ -4,11 +4,17 @@ export const game = document.querySelector<HTMLDivElement>(
 export const gameEnd = document.querySelector<HTMLDivElement>(
   ".game__end"
 ) as HTMLDivElement;
-export const gameStart = document.querySelector<HTMLButtonElement>(
+export const gameStartBtn = document.querySelector<HTMLButtonElement>(
   ".btn__start"
+) as HTMLButtonElement;
+export const gameStopBtn = document.querySelector<HTMLButtonElement>(
+  ".end"
 ) as HTMLButtonElement;
 export const gameAgain = document.querySelector<HTMLButtonElement>(
   ".game__again"
+) as HTMLButtonElement;
+export const noThanksBtn = document.querySelector<HTMLButtonElement>(
+  "#no"
 ) as HTMLButtonElement;
 export const gameWin = document.querySelector<HTMLDivElement>(
   ".game__win"

@@ -4,7 +4,7 @@ import { createMatrix } from "../createFunctions/createMatrix";
 import { keyListener } from "../moveFunctions/keyListener";
 import { checkGameOver } from "../checkFumctions/checkGameOver";
 import { timer } from "../timer/timer";
-import { gameStart } from "../../data/elements";
+import { gameStopBtn, gameStartBtn } from "../../data/elements";
 export let matrix: Array<number[]> = [];
 export const startGame = () => {
   matrix = createMatrix(constants.size);
@@ -15,7 +15,8 @@ export const startGame = () => {
     checkGameOver();
   });
   time.interval = setInterval(timer, 10);
-  gameStart.style.display = "none";
+  gameStartBtn.setAttribute("disabled", "true");
+  gameStopBtn.removeAttribute("disabled");
   canIpress.canPressDown = true;
   canIpress.canPressUp = true;
   canIpress.canPressRight = true;
