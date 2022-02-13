@@ -8,15 +8,15 @@
   <meta name="keywords" content="game, 2048, score, play, win">
   <meta property="og:image"
         content="https://i0.wp.com/itsfoss.com/wp-content/uploads/2018/07/play-2048-game-linux.jpeg?fit=800%2C450&ssl=1"/>
-  <meta property="og:title" content="Play hame 2048"/>
+  <meta property="og:title" content="Play game 2048"/>
   <meta property="og:description" content="Game 2048"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="data:undefined;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA/xe07P8XtvT/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7b0/xe07P8XtvT/F7e8/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3vP8XtvT/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e1Axe3tPsXt7UDF7e0+xe3tPcXt7T3E7e0+xe3tPsXt7UHG7e0+xe3tP8Xt7T/F7e0/xe3tPcTt7XTV8vKm5Pf2gNnz83HU8vGh4/b2c9Xy8lbM7+931vLyd9by8oHZ8/OZ4PX1a9Lx8T7F7e0/xe3tP8Xt7T7F7e1bzvDwsOf493XV8vKj4/b2gtnz86vm9/es5vf3u+v5+KTk9/am5Pf2qeX394rc9PQ9xO3tP8Xt7T/F7e0+xe3tS8nu7oTa8/Ok5Pb2o+P29oPa8/Ok5Pb2a9Px8b/s+fmI2/T0oOL29r7s+fl92PPzPMTt7T/F7e0/xe3tPcXt7V/P8PCe4vb2dtby8mrS8fGg4/b2cNTy8T3F7e192PPzbNPx8XrX8/Ka4fb1Y9Dw8D3E7e0/xe3tP8Xt7T/F7e0+xe3tQMXt7T7F7e0+xe3tQMXt7T7F7e0/xe3tPcXt7T7F7e0+xe3tQMXt7T7F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7b0/xe3vP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7z/F7b0/xe07P8XtvT/F7ew/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7T/F7e0/xe3tP8Xt7D/F7b0/xe07AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" type="image/x-icon">
   <title>2 0 4 8</title>
-  <script type="module" crossorigin src="/Ratio_module2/assets/index.4e004712.js"></script>
-  <link rel="stylesheet" href="/Ratio_module2/assets/index.4d79a5ee.css">
+  <script type="module" crossorigin src="/Ratio_module2/assets/index.df6cf000.js"></script>
+  <link rel="stylesheet" href="/Ratio_module2/assets/index.06be8546.css">
 </head>
 <body>
 <div class="container">
@@ -29,8 +29,10 @@
     </h2>
   </header>
   <section class="game">
-
+  <div class="buttonBox">
     <button class="btn__start">Start Game</button>
+    <button disabled="true" class="btn__start end">Stop Game</button>
+  </div>
     <div class="game__block">
       <div class="game__wrapper">
         <div class="game__table">
@@ -50,6 +52,9 @@
     <span class="game__end-title">Game over</span>
     <button class="game__again">
       Try again
+    </button>
+    <button class="game__again" id="no">
+      No thanks
     </button>
   </div>
   <div class="game__win">
